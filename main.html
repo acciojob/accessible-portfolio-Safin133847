@@ -1,16 +1,104 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Accessible Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        header, nav, main {
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 8px;
+            background-color: #0073e6;
+            color: white;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #005bb5;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .description {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <header>
+        <h1 role="heading">My Accessible Portfolio</h1>
+    </header>
 
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#skills">Skills</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <img src="your-image-url.jpg" alt="A photo of me" role="img">
+
+        <div class="description">
+            <p>Welcome to my portfolio! Here you can find information about my skills and projects.</p>
+        </div>
+
+        <section id="skills">
+            <h2 role="heading">Skills</h2>
+            <ul role="list">
+                <li role="listitem">HTML & CSS</li>
+                <li role="listitem">JavaScript</li>
+                <li role="listitem">React</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2 role="heading">Projects</h2>
+            <ul role="list">
+                <li role="listitem">Project One: A web application.</li>
+                <li role="listitem">Project Two: A personal blog.</li>
+                <li role="listitem">Project Three: A JavaScript game.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
